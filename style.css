@@ -1,0 +1,23 @@
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+label {
+    font-size: 2em;
+    border: 3px solid var(--text-color);
+    border-radius: 100%;
+}
+
+label::after {
+    content: '☀';
+}
+
+input#color-scheme-checkbox {
+    display: none;
+}
+
+input#color-scheme-checkbox:checked + label::after {
+    content: '☾';
+}
