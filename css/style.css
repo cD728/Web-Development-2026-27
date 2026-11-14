@@ -4,6 +4,22 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .navegation {
+    }
+
+    .parts {
+        justify-self: center;
+    }
+
+    .color-scheme {
+        justify-self: end;
+    }
+}
+
 label {
     font-size: 2em;
 }
