@@ -35,3 +35,31 @@ input#color-scheme-checkbox {
 input#color-scheme-checkbox:checked + label::after {
     content: '☾';
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1em;
+
+    section:nth-child(1) {
+        margin-right: 2em;
+        padding: 0.2em;
+        max-width: 30%;
+        text-align: justify;
+
+        h1 {
+            text-align: center;
+        }
+
+        br {
+            margin-bottom: 1em;
+        }
+    }
+
+    section:nth-child(2) {
+        img {
+            height: 100%;
+        }
+    }
+}
