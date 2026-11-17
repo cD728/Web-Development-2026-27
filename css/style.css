@@ -5,12 +5,41 @@ body {
     margin: 0;
 }
 
-navbar {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border: 2px solid var(--text-color);
+a {
+    padding: 0.3em 0.5em;
+    color: var(--text-color);
 
-    .navegation, .jojos {
+    text-decoration: none;
+    background-image: linear-gradient(to right, var(--text-color));
+    background-position: 0.4em 1.3em;
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+}
+
+a:hover {
+    animation: show-underline 1s ease forwards;
+}
+
+navbar {
+    margin: 0.3em 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin: 0;
+            margin-right: 0.3em;
+
+            font-size: 2em;
+        }
+    }
+
+    .navegation {
+        justify-self: end;
         display: flex;
         list-style-type: none;
         margin: 0;
@@ -18,38 +47,18 @@ navbar {
 
         li {
             a {
-                display: block;
-                padding: 0.3em 0.5em;
-                color: var(--text-color);
-                text-decoration: none;
-                border-right: 2px solid var(--text-color);
-
                 font-size: 1.5em;
             }
-
-            a:hover {
-                background-color: gray;
-            }
         }
-    }
 
-    .jojos {
-        justify-self: center;
-
-        li {
-            a {
-                border-left: 2px solid var(--text-color);
-                border-right: 2px solid var(--text-color);
-            }
+        li:nth-child(-n + 4)::after {
+            content: '/';
         }
-    }
-
-    .color-scheme {
-        justify-self: end;
     }
 }
 
 label {
+    cursor: pointer;
     font-size: 2em;
 }
 
@@ -69,37 +78,62 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: 1em;
+    margin-top: 1.5em;
 
     section.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         position: relative;
 
-        margin-right: 2em;
-        padding: 0.2em;
+        padding: 0 1em;
+        margin: 0 1.5em;
         max-width: 30%;
         text-align: justify;
 
-        h1 {
-            text-align: center;
+        background-color: gray;
+        border-radius: 5px;
+
+        #top {
+            h1 {
+                text-align: center;
+            }
+
+            br {
+                margin-bottom: 1em;
+            }
+
+            p {
+                font-size: 1.3em;
+            }
+
+            #stand {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                opacity: 0;
+            }
         }
 
-        br {
-            margin-bottom: 1em;
-        }
-
-        #stand {
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            opacity: 0;
+        #bottom {
+            display: flex;
+            justify-content: space-between;
         }
     }
 
-    section {
-        img {
-            width: 300px;
-        }
+    img {
+        height: 40em;
+        cursor: pointer;
+    }
+
+    img:hover {
+        animation: hover-image 0.8s forwards;
+    }
+
+    img#left {
+        --direction: -1
     }
 
     section.jojo-img {
@@ -112,6 +146,22 @@ main {
 
             opacity: 0;
         }
+    }
+}
+
+@keyframes hover-image {
+    to {
+        opacity: 0.8;
+        transform: scale(.9) translateX(calc(var(--direction, 1) * 4em));
+    }
+}
+
+@keyframes show-underline {
+    from {
+        background-size: 0 2px;
+    }
+    to {
+        background-size: 79% 2px;
     }
 }
 
