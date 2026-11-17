@@ -8,30 +8,47 @@
         "part_id": 1,
         "part_name": "Phantom Blood",
         "desc_text": "This part is the begining of the series and is a very strong start, since it begins with ripple and stone masks a part of JoJo's that I like very much but find it unfortunate that is pretty much ignored for the rest of the series.\nAnother sad thing about this part is the fact that it is really short in the anime, only 9 episodes, which resulted in certain parts of the manga being cut.\nBut overall this is a very good part of the series as it shows the major antagonist Dio Brando and has very good fight, and in JoJo's fashion end in a absolute confusion.",
-        "img": "/Web-Development-2026-27/imgs/jojo1.webp"
+        "img": "/Web-Development-2026-27/imgs/jojo1.webp",
+        "jojo_name": "Johnathan Joestar",
+        "jojo_img": "/Web-Development-2026-27/imgs/johnathan.webp"
     },
     {
         "part_id": 2,
         "part_name": "Battle Tendency",
         "desc_text": "This part is a great continuation of the previous one where instead of following Johnathon's adventure we are following his grandson adventure named Joseph Joestar.\nIn this part the story continues to talk about the stone masks but with a added problem, the pillar man.\nThe pillar man are a group of four man that have user the stone mask to turn them selfs into humans with unbelieveble abilities, with their interest being becoming even more powerful.\nThis part ends in a spetacular fight against the final pilar man, Kars, that used a red gem to turn I'm self into a god but got launched into space with the hand he cut of Joseph.",
-        "img": "/Web-Development-2026-27/imgs/jojo2.webp"
+        "img": "/Web-Development-2026-27/imgs/jojo2.webp",
+        "jojo_name": "Joseph Joestar",
+        "jojo_img": "/Web-Development-2026-27/imgs/joseph_new.webp",
+        "stand_img": "/Web-Development-2026-27/imgs/joseph_old.webp"
     },
     {
         "part_id": 3,
         "part_name": "Stardust Crusaders",
         "desc_text": "This part solves a loose hand left on part 1, that being where is DIO?\nIn this part the main JoJo is Jotaro Kujo who with the help of his grandfather Joseph, Jean Polnareff, Abdul, Kakyoin and Iggy will go into Egypt to find DIO and kill him to save Jotaros' mother.\nThis part introduces stands and pretty much forgets ripple which makes me kind of sad, but with the introduction of stands a lot of cool and overpowered abilities appear like the abilitity to create a sun or travel from a reflection to another.\nThis part ends with DIO being finally killed and Joseph miraculously being brought back to life using the blood that DIO took from him, and the final battle is really cool as it shows what is a very strong ability and the reappering ability of controling time.",
-        "img": "/Web-Development-2026-27/imgs/jojo3.webp"
+        "img": "/Web-Development-2026-27/imgs/jojo3.webp",
+        "jojo_name": "Jotaro Kujo",
+        "stand_name": "Star Platinum",
+        "jojo_img": "/Web-Development-2026-27/imgs/jotaro.webp",
+        "stand_img": "/Web-Development-2026-27/imgs/star_plat.webp"
     },
     {
         "part_id": 4,
         "part_name": "Diamond is Unbreakable",
         "desc_text": "This part is a very interesting one, as it becomes more of a slice of life introduction a lot of characters that become friends with the main cast.\nBut also this part introduces a lot of annoying characters that have no redeeming characteristics. And one one of them is the main villan of the part Yoshikage Kira a man that didn't just have a very powerful stand that lets him blow up people into nothing, he also with an arrow was able to gain a second ability that kills people that learn about him and manipulate time.\nThis part is very good, the slice of life elements are very refreshing in the series being introduced to new and weird people that become friends of the protaganists instead of just becoming mostly in the background.",
-        "img": "/Web-Development-2026-27/imgs/jojo4.webp"
+        "img": "/Web-Development-2026-27/imgs/jojo4.webp",
+        "jojo_name": "Josuke Higashikata",
+        "stand_name": "Crazy Diamond",
+        "jojo_img": "/Web-Development-2026-27/imgs/josuke.webp",
+        "stand_img": "/Web-Development-2026-27/imgs/crazy_diamond.webp"
     },
     {
         "part_id": 5,
         "part_name": "Golden Wind",
         "desc_text": "This part is very good, the slice of life elements are very refreshing in the series being introduced to new and weird people that become friends of the protaganists instead of just becoming mostly in the background.\nThis part focuses in the wish of Giorno Giovanna of joining the mafia group Passione so that he can overthrow the boss and make it so that they stop dealing drugs to children and other type of bad things.\nThis part is also the first part of JoJo's that introduces stand stats outside of the normal A-F and N/A, has it introduces the possibility of a stand having a infinity ability. This stand is called Notorious B.I.G and is as far as I know the only enemy stand that remains alive because there is technically no actual way of killing him.\nThis part has the third stand enemy that has a time manipulating ability but he gets \"killed\" in the worst way of all JoJo's enemies, even worse than Kars, because Diavolo is dieing in perpetually until the end of the universe.",
-        "img": "/Web-Development-2026-27/imgs/jojo5.webp"
+        "img": "/Web-Development-2026-27/imgs/jojo5.webp",
+        "jojo_name": "Giorno Giovanna",
+        "stand_name": "Golden Experience",
+        "jojo_img": "/Web-Development-2026-27/imgs/giorno.webp",
+        "stand_img": "/Web-Development-2026-27/imgs/golden_exp.webp"
     }
 ]

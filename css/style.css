@@ -75,8 +75,9 @@ input#color-scheme-checkbox:checked + label::after {
 }
 
 main {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
     flex-direction: row;
     margin-top: 1.5em;
 
@@ -89,7 +90,6 @@ main {
 
         padding: 0 1em;
         margin: 0 1.5em;
-        max-width: 30%;
         text-align: justify;
 
         background-color: gray;
@@ -108,18 +108,35 @@ main {
                 font-size: 1.3em;
             }
 
-            #stand {
-                position: absolute;
-                top: 0;
-                left: 0;
+            div {
+                display: flex;
+                justify-content: center;
 
-                opacity: 0;
+                position: relative;
+
+                img {
+                    all: revert;
+                    width: 40%;
+                }
+
+                img#stand {
+                    position: absolute;
+                    top: 0;
+
+                    opacity: 0;
+                }
             }
         }
 
         #bottom {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 0.7em;
+
+            a {
+                font-size: 1.2em;
+                font-weight: bold;
+            }
         }
     }
 
@@ -133,7 +150,8 @@ main {
     }
 
     img#left {
-        --direction: -1
+        --direction: -1;
+        justify-self: end;
     }
 
     section.jojo-img {
@@ -161,7 +179,7 @@ main {
         background-size: 0 2px;
     }
     to {
-        background-size: 79% 2px;
+        background-size: calc(100% - 0.8em) 2px;
     }
 }
 
