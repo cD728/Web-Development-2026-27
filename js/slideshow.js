@@ -89,8 +89,9 @@ function goToJojo(hash) {
         right_index = betterModulus(right_index, 1, jojo_parts.length)
     }
 
+    console.log(jojo_parts[part_index])
     changeContentJojo(jojo_parts[part_index].jojo_name, jojo_parts[part_index].stand_name || jojo_parts[part_index].jojo_name,
-                      jojo_parts[part_index].jojo_img, jojo_parts[part_index].stand_img,
+                      jojo_parts[part_index].jojo_img_blob, jojo_parts[part_index].stand_img_blob,
                       jojo_parts[left_index].img_blob, jojo_parts[right_index].img_blob,
                       jojo_parts[left_index].part_name, fromPartIDToHash(jojo_parts[left_index].part_id),
                       jojo_parts[right_index].part_name, fromPartIDToHash(jojo_parts[right_index].part_id),
@@ -175,7 +176,6 @@ function changeContentJojo(jojo_name, stand_name, jojo_img, stand_img, left_img_
             let stand_img_node = document.querySelector("section.content div#top div img#stand")
 
             if (show_stand) {
-                console.log("1")
                 name_node.textContent = stand_name
                 jojo_img_node.style.animation = "rotate-out 1.5s linear forwards"
                 stand_img_node.style.animation = "rotate-in 1.5s linear forwards"
@@ -188,8 +188,8 @@ function changeContentJojo(jojo_name, stand_name, jojo_img, stand_img, left_img_
     } else {
         document.querySelector("section.content div#top div").style.cursor = "auto"
         document.querySelector("section.content div#top div").onclick = undefined
-        document.querySelector("section.content div#top div img#jojo").style.opacity = 1
-        document.querySelector("section.content div#top div img#stand").style.opacity = 0
+        document.querySelector("section.content div#top div img#jojo").style.animation = 1
+        document.querySelector("section.content div#top div img#stand").style.animation = 0
     }
 
     document.querySelector("img#left").src = left_img_src
@@ -221,13 +221,22 @@ async function main() {
     ].concat(jojo_parts
              .filter(obj => obj.part_id !== 0)
              .map(obj => getImage(obj.img))
-            )
+            ).concat(jojo_parts
+                     .filter(obj => obj.jojo_img)
+                     .map(obj => getImage(obj.jojo_img))
+                    ).concat(jojo_parts
+                             .filter(obj => obj.stand_img)
+                             .map(obj => getImage(obj.stand_img)))
 
     const image_urls = (await Promise.all(promises)).slice(1)
 
     for (let part of jojo_parts) {
         if (part.part_id !== 0) {
             part.img_blob = image_urls[part.part_id - 1]
+            part.jojo_img_blob = image_urls[5 + part.part_id - 1]
+            if (part.stand_img) {
+                part.stand_img_blob = image_urls[9 + part.part_id - 1]
+            }
         }
     }
 
