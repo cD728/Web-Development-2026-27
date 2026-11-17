@@ -130,18 +130,22 @@ main {
 
         #bottom {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             margin-bottom: 0.7em;
 
             a {
                 font-size: 1.2em;
                 font-weight: bold;
             }
+
+            a#left, a#right {
+                display: none;
+            }
         }
     }
 
     img {
-        height: 40em;
+        width: 70%;
         cursor: pointer;
     }
 
@@ -153,18 +157,27 @@ main {
         --direction: -1;
         justify-self: end;
     }
+}
 
-    section.jojo-img {
-        position: relative;
+@media screen and (width <= 900px) {
+    img#left, img#right {
+        display: none;
+    }
 
-        img#stand {
-            position: absolute;
-            top: 0;
-            left: 0;
+    main {
+        display: block;
 
-            opacity: 0;
+        section.content {
+            div#bottom {
+                justify-content: space-between;
+
+                a#left, a#right {
+                    display: inline;
+                }
+            }
         }
     }
+
 }
 
 @keyframes hover-image {
