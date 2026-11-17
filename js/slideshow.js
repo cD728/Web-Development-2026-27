@@ -109,6 +109,11 @@ function fromHashToPartID(hash) {
     case "#part3":
     case "#part4":
     case "#part5":
+    case "#jojo1":
+    case "#jojo2":
+    case "#jojo3":
+    case "#jojo4":
+    case "#jojo5":
         return parseInt(hash.slice(-1))
     default:
         throw Error("Invalid hash value")
