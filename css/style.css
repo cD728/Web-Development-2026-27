@@ -159,7 +159,7 @@ main {
     }
 }
 
-@media screen and (width <= 900px) {
+@media only screen and (width <= 900px) {
     img#left, img#right {
         display: none;
     }
