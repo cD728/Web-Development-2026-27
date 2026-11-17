@@ -3,7 +3,7 @@ Note: The images used in this website are from jojowiki.com
 
 ## Purpose
 
-This website is a JoJo's Bizarre Advanture Fan Page.
+This website is a JoJo's Bizarre Adventure Fan Page.
 In it I talk about my opinion on each part while also showing each parts' JoJo protagonist and in the parts I can its stand.
 
 ## How the website works
