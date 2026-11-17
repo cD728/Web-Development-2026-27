@@ -10,6 +10,14 @@ function betterModulus(operand_a, operand_b, modulus) {
     return ((operand_a + operand_b % modulus) + modulus) % modulus
 }
 
+function getStyleSheet(uniqueTitle) {
+    for (const sheet of document.styleSheets) {
+        if (sheet.title === uniqueTitle) {
+            return sheet
+        }
+    }
+}
+
 let image_urls = undefined
 let image_node = undefined
 
