@@ -1,9 +1,0 @@
-.slideshow {
-    display: flex;
-}
-
-@keyframes grow-width {
-    to {
-        width: 100%;
-    }
-}
